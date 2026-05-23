@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ee85e04d3c1742918eafca46a02c8, type: 3}
+  m_Name: Merge
+  m_EditorClassIdentifier: 
+  prelaf: {fileID: 7519711844677625599, guid: 63ae47cec2394a54cb2c7af1a67dcd3c, type: 3}
+  icon: {fileID: 6921249545961426555, guid: 3fd347ddf49e4ec4995f96aeda2927ed, type: 3}
+  Name: Merge
+  Id: 3
+  cost: 20
+  Cooldown: 5
+  Hp: 150
+  dame: 30

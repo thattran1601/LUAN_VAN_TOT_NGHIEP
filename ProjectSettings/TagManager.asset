@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - enemy
+  - soldier
+  - thanh
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Enemy_Body
+  - Linh_Body
+  - Linh_Range
+  - Enemy_Range
+  - Thanh
+  - Lane
+  - Boss_Range
+  - Boss_Body
+  - Linh_Tank
+  - arrowEnemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1525925843
+    locked: 0
+  - name: thanh
+    uniqueID: 292354015
+    locked: 0
+  - name: map
+    uniqueID: 339589477
+    locked: 0
+  - name: HieuUng
+    uniqueID: 3403477955
+    locked: 0
+  m_RenderingLayers:
+  - Default

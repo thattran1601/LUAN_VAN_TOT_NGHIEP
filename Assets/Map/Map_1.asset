@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73289407eb5cf7340923d1aab39b9042, type: 3}
+  m_Name: Map_1
+  m_EditorClassIdentifier: 
+  IdMap: 1
+  NameMap: Map 1
+  MaxWave: 5
+  Enemy:
+  - {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+  - {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
+  - {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
+  Boss: {fileID: 4769411976371186232, guid: 869b97fabb3c23b4e8421c1df166a256, type: 3}
+  Background: {fileID: 5875485499176485407, guid: 2c6c357220f82104dbdecafcd01c23ff, type: 3}
+  wave:
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+      count: 5
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+      count: 5
+    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
+      count: 2
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+      count: 5
+    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
+      count: 3
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+      count: 3
+    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
+      count: 7
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
+      count: 2
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo: []
+    delayspawn: 1
+    isboss: 1

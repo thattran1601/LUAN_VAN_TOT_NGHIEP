@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100ee85e04d3c1742918eafca46a02c8, type: 3}
+  m_Name: knight
+  m_EditorClassIdentifier: 
+  prelaf: {fileID: 6889615552055653202, guid: dc87eb4a0b4b4504bad28a8d34e79722, type: 3}
+  icon: {fileID: 7951230458855576583, guid: b909011277a8de241a81cfb4e253bcee, type: 3}
+  Name: knight
+  Id: 3
+  cost: 30
+  Cooldown: 10
+  Hp: 400
+  dame: 30
