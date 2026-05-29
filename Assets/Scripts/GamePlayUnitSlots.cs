@@ -41,20 +41,30 @@ public class GamePlayUnitSlots : MonoBehaviour
     {
         if (unitData == null)
             return;
-       
-        if (spawn.instance.Gold_current>=coin)
+
+        if (spawn.instance.Gold_current >= coin)
         {
             spawn.instance.Gold_current -= coin;
-            Debug.Log(spawn.instance.Gold_current);
+
             GoldManager.instance.CurrentGold = spawn.instance.Gold_current;
             GoldManager.instance.UpdateGoldUI();
-            Instantiate(unitData.prelaf, 
-                spawn.instance.spawnpoint.position,
-                Quaternion.identity);
+
+            Vector3 pos = spawn.instance.spawnpoint.position;
+            pos.z = 0f;
+
+            Debug.Log("SpawnPoint: " + spawn.instance.spawnpoint.name);
+            Debug.Log("SpawnPos: " + pos);
+
+            GameObject unit = Instantiate(
+                unitData.prelaf,
+                pos,
+                Quaternion.identity
+            );
+
+            Debug.Log("UnitPos After Spawn: " + unit.transform.position);
+
             StartCoroutine(CooldownRoutine());
-           
-        }    
-        
+        }
     }
     IEnumerator CooldownRoutine()
     {

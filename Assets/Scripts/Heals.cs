@@ -7,7 +7,7 @@ public class Heals : MonoBehaviour
     public static Heals instance;
     [Header("HP")]
     public int maxHp = 100;
-    private float currentHp;
+    public float currentHp;
 
     [Header("HP BAR")]
     public GameObject hpCanvas;

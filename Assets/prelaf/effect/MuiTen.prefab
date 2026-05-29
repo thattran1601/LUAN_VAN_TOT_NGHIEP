@@ -129,7 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddbeb4360e06a34b8b20f9f3b2d0632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dame: 15
+  dame: 26
+  XuyenGiap: 0
 --- !u!61 &1914855032993492827
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -45,6 +45,7 @@ public class Heals_boss : MonoBehaviour
     {
         Isdieboss = true;
         BossManger.instance.BossDie();
+        GameManager.instance.victory();
         animator.SetBool("die", true);
         BossUI.Instance.HpBar.SetActive(false);
         

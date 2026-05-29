@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 public class MapSelect : MonoBehaviour
 {
     public GameObject Wated;
+    public GameObject Panel;
     void Start()
     {
+        Panel.SetActive(false);
         Wated.SetActive(false);
     }
 
@@ -20,6 +22,11 @@ public class MapSelect : MonoBehaviour
         int MapInt = SaveManager.instance.GetUnLockMap();
         if (mapselect <= MapInt)
         {
+            if(GameData.UnitData.Count==0)
+            {
+                Panel.SetActive(true);
+                return;
+            }    
             GameData.MapInt = mapselect;
             SceneTransition.Instance.LoadSceneManager("GamePlay");
         } 
@@ -33,5 +40,9 @@ public class MapSelect : MonoBehaviour
     public void OK()
     {
         Wated.SetActive(false);
+    }    
+    public void ButtonOK()
+    {
+        Panel.SetActive(false);
     }    
 }

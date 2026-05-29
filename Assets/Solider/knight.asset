@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 7951230458855576583, guid: b909011277a8de241a81cfb4e253bcee, type: 3}
   Name: knight
   Id: 3
-  cost: 30
-  Cooldown: 10
-  Hp: 400
-  dame: 30
+  cost: 40
+  Cooldown: 6
+  Hp: 240
+  dame: 32

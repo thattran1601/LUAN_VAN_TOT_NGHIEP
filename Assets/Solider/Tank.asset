@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 3997445265733366731, guid: 08f6513931690b3439bb3e3a751dc4e4, type: 3}
   Name: Tank
   Id: 1
-  cost: 10
-  Cooldown: 2
-  Hp: 500
-  dame: 10
+  cost: 50
+  Cooldown: 8
+  Hp: 300
+  dame: 20

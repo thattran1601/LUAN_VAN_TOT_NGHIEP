@@ -252,8 +252,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 339589477
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 2710983885293062031, guid: 8f07a11840e4b6e46bab195de3cfc655, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 300
+  currentHp: 0
   hpCanvas: {fileID: 1168698446503204532}
   hpFill: {fileID: 7166861884503602244}
   coinPrefab: {fileID: 5719753415875419794, guid: 4561272c6e1f22e42838b75c3a777c24, type: 3}

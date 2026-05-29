@@ -462,7 +462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dame: 18
   posionAttack: {fileID: 966969829630367919}
-  attackrange: 1
+  attackrange: 1.5
   enemy:
     serializedVersion: 2
     m_Bits: 128
@@ -486,6 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 220
+  currentHp: 0
   hpCanvas: {fileID: 2521087468159365473}
   hpFill: {fileID: 5466575072394087979}
   coinPrefab: {fileID: 5719753415875419794, guid: 4561272c6e1f22e42838b75c3a777c24, type: 3}
@@ -494,6 +495,7 @@ MonoBehaviour:
   isKnock: 0
   isHit: 0
   hasShield: 1
+  IsnotKnock: 0
 --- !u!1 &8217281810286776252
 GameObject:
   m_ObjectHideFlags: 0

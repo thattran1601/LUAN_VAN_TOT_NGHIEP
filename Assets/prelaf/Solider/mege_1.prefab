@@ -409,9 +409,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392ac46813aae8349a4adc5fc693e8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.9
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
+  IsStun: 0
 --- !u!70 &3738600682929201427
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

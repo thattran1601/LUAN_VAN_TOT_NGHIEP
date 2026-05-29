@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 6921249545961426555, guid: 3fd347ddf49e4ec4995f96aeda2927ed, type: 3}
   Name: Merge
   Id: 3
-  cost: 20
-  Cooldown: 5
+  cost: 45
+  Cooldown: 7
   Hp: 150
   dame: 30

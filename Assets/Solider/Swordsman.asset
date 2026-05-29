@@ -17,6 +17,6 @@ MonoBehaviour:
   Name: Swordsman
   Id: 5
   cost: 40
-  Cooldown: 15
-  Hp: 300
-  dame: 20
+  Cooldown: 5
+  Hp: 170
+  dame: 38

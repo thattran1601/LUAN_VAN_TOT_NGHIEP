@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73289407eb5cf7340923d1aab39b9042, type: 3}
+  m_Name: Map_4
+  m_EditorClassIdentifier: 
+  IdMap: 4
+  NameMap: Map 4
+  MaxWave: 0
+  Enemy: []
+  Boss: {fileID: 4769411976371186232, guid: 869b97fabb3c23b4e8421c1df166a256, type: 3}
+  Background: {fileID: 1860000993884864527, guid: c721af31bc0ee1646a776e3fbf1dbc0a, type: 3}
+  wave:
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 10
+    delayspawn: 0.5
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 15
+    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+      count: 15
+    delayspawn: 0.5
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 20
+    - enemyprelaf: {fileID: 1220201138100830101, guid: 62504619cf7fe864981d99f5a0647aa1, type: 3}
+      count: 15
+    delayspawn: 0.5
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 25
+    - enemyprelaf: {fileID: 6152735316436746358, guid: 57380e81b10b76b469d922dd3193d71e, type: 3}
+      count: 5
+    delayspawn: 0.5
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 25
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
+      count: 10
+    delayspawn: 0.5
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 3736755814772754204, guid: 81ef1868c73225148aa72ca390525011, type: 3}
+      count: 25
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
+      count: 10
+    delayspawn: 0.5
+    isboss: 1

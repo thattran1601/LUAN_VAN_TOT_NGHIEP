@@ -99,6 +99,7 @@ public class AI_Chuyen_Dong : MonoBehaviour
         IsStun = true;
         speed = 0;
         animator.SetBool("attack", false);
+        DamePopup.intance.showtext("Stun", gameObject.transform.position);
         animator.speed = 0;
         yield return new WaitForSeconds(stuntime);
         IsStun = false;

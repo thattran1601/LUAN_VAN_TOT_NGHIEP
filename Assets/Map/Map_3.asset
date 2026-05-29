@@ -23,40 +23,40 @@ MonoBehaviour:
   Background: {fileID: 5797066345850931948, guid: 84271656654179f4eae0a34257a42e8b, type: 3}
   wave:
   - enemyinfo:
-    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
+    - enemyprelaf: {fileID: 4100522023538957387, guid: b82ea600c84d85346a3538b59eacadbc, type: 3}
+      count: 5
+    - enemyprelaf: {fileID: 1220201138100830101, guid: 62504619cf7fe864981d99f5a0647aa1, type: 3}
       count: 10
     delayspawn: 1
     isboss: 0
   - enemyinfo:
-    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
+    - enemyprelaf: {fileID: 4100522023538957387, guid: b82ea600c84d85346a3538b59eacadbc, type: 3}
+      count: 8
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
       count: 10
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 5223534156255403348, guid: 64974b21df83a3a4dad63d544c5e86bf, type: 3}
+      count: 10
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
+      count: 12
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 4100522023538957387, guid: b82ea600c84d85346a3538b59eacadbc, type: 3}
+      count: 12
+    - enemyprelaf: {fileID: 5223534156255403348, guid: 64974b21df83a3a4dad63d544c5e86bf, type: 3}
+      count: 10
+    delayspawn: 1
+    isboss: 0
+  - enemyinfo:
+    - enemyprelaf: {fileID: 4100522023538957387, guid: b82ea600c84d85346a3538b59eacadbc, type: 3}
+      count: 15
+    - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
+      count: 15
     - enemyprelaf: {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
       count: 5
-    delayspawn: 1
-    isboss: 0
-  - enemyinfo:
-    - enemyprelaf: {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
-      count: 10
-    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
-      count: 7
-    delayspawn: 1
-    isboss: 0
-  - enemyinfo:
-    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
-      count: 10
-    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
-      count: 10
-    - enemyprelaf: {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
-      count: 10
-    delayspawn: 1
-    isboss: 0
-  - enemyinfo:
-    - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
-      count: 10
-    - enemyprelaf: {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
-      count: 15
-    - enemyprelaf: {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
-      count: 15
     delayspawn: 1
     isboss: 0
   - enemyinfo: []

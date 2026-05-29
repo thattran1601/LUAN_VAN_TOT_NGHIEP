@@ -26,7 +26,9 @@ public class MuiTen : MonoBehaviour
             {
                 if(enemy.hasShield==true)
                 {
+                    DamePopup.intance.showtext("Block",enemy.transform.position);
                     Destroy(gameObject);
+
                 }
                 else
                 {

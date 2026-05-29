@@ -29,9 +29,26 @@ public class GameManager : MonoBehaviour
     }    
     public void victory()
     {
+        int currenmap = GameData.MapInt;
         IsWin = true;
         Victory.SetActive(true);
         SaveManager.instance.UnLockMap(GameData.MapInt + 1);
+        switch (currenmap)
+        {
+            case 1:
+                SaveManager.instance.UnLockUnit(3);
+                break; 
+            case 2:
+                SaveManager.instance.UnLockUnit(4);
+                break;
+            case 3:
+                SaveManager.instance.UnLockUnit(5);
+                break; 
+            case 4:
+                SaveManager.instance.UnLockUnit(6);
+                break; 
+
+        }
           
     }    
     public void ButtonRetry()

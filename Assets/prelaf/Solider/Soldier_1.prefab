@@ -273,9 +273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392ac46813aae8349a4adc5fc693e8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.9
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
+  IsStun: 0
 --- !u!114 &5182640351083519049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddf7616cbe195042ba89ccb96407542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dame: 10
+  dame: 20
   posionAttack: {fileID: 7464380430591116507}
   attackrange: 1
   enemy:
@@ -309,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5d2ecb846d108499e46a393ee55a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 500
+  maxHp: 300
   hpCanvas: {fileID: 7935173287261431898}
   Hpfill: {fileID: 1352893815519291467}
   damageReduction: 0.5
@@ -620,7 +621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.18, y: 1.32}
+  m_AnchoredPosition: {x: -0.18, y: 1.59}
   m_SizeDelta: {x: 105.1662, y: 17.1243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3032417364400951974

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2516324904652488718}
   - component: {fileID: 7914329781644734913}
   - component: {fileID: 6515740806385787726}
-  - component: {fileID: 1332561614359571085}
   - component: {fileID: 6887781122770364127}
   - component: {fileID: 5399347199986070329}
+  - component: {fileID: 6624447950512818416}
   m_Layer: 7
   m_Name: Swordsman
   m_TagString: Untagged
@@ -181,27 +181,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1332561614359571085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944870209765339711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ddf7616cbe195042ba89ccb96407542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dame: 20
-  posionAttack: {fileID: 7897635263869947228}
-  attackrange: 1
-  enemy:
-    serializedVersion: 2
-    m_Bits: 64
-  Boss:
-    serializedVersion: 2
-    m_Bits: 8192
 --- !u!114 &6887781122770364127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +196,7 @@ MonoBehaviour:
   speed: 2
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
+  IsStun: 0
 --- !u!114 &5399347199986070329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,10 +209,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5d2ecb846d108499e46a393ee55a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 300
+  maxHp: 170
   hpCanvas: {fileID: 2611978023713934874}
   Hpfill: {fileID: 2374250879336282376}
   damageReduction: 1
+--- !u!114 &6624447950512818416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944870209765339711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c91115f48e8dfb4fb9c5e3fb0fba02e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 38
+  targetPosition: {fileID: 7897635263869947228}
+  radius: 2
+  enemylayer:
+    serializedVersion: 2
+    m_Bits: 64
+  bosslayer:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!1 &1104414196946259319
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.02, y: 1.3069153}
+  m_AnchoredPosition: {x: -0.1, y: 1.66}
   m_SizeDelta: {x: 105.1662, y: 17.1243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6090480134640437181

@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 8043293953625437326, guid: a4bc91f534af5104099c3c4a490ad3cb, type: 3}
   Name: Lancer
   Id: 6
-  cost: 30
+  cost: 55
   Cooldown: 10
-  Hp: 500
-  dame: 50
+  Hp: 220
+  dame: 40

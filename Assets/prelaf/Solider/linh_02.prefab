@@ -452,9 +452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392ac46813aae8349a4adc5fc693e8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.9
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
+  IsStun: 0
 --- !u!114 &5418407782918111967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -467,7 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5d2ecb846d108499e46a393ee55a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
+  maxHp: 150
   hpCanvas: {fileID: 5050652925916808783}
   Hpfill: {fileID: 2382668124184168451}
   damageReduction: 1

@@ -450,9 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ddf7616cbe195042ba89ccb96407542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dame: 30
+  dame: 32
   posionAttack: {fileID: 2105397303937136294}
-  attackrange: 1
+  attackrange: 2
   enemy:
     serializedVersion: 2
     m_Bits: 64
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5d2ecb846d108499e46a393ee55a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 400
+  maxHp: 240
   hpCanvas: {fileID: 3459803693779581531}
   Hpfill: {fileID: 6513354104981248225}
   damageReduction: 1
@@ -487,9 +487,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392ac46813aae8349a4adc5fc693e8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
+  IsStun: 0
 --- !u!50 &5669850833123951740
 Rigidbody2D:
   serializedVersion: 5

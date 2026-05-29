@@ -7,52 +7,52 @@ public class Attack : MonoBehaviour
     public float attackrange = 1f;
     public LayerMask enemy;
     public LayerMask Boss;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Dealdame()
     {
-        if (UISetting.intance.isSetting == true)
+        if (UISetting.intance != null && UISetting.intance.isSetting)
             return;
-        Collider2D hits = Physics2D.OverlapCircle(posionAttack.position, attackrange, enemy);
-        Collider2D hitboss = Physics2D.OverlapCircle(posionAttack.position, attackrange, Boss);
-        if (hits == null && hitboss == null)
-            return;
-            Heals hp=hits.GetComponent<Heals>();
-            if(hp!=null)
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
+            posionAttack.position,
+            attackrange,
+            enemy
+        );
+
+        if (hitEnemies.Length > 0)
+        {
+            Heals hp = hitEnemies[0].GetComponent<Heals>();
+
+            if (hp != null)
             {
                 hp.TakeDamage(dame);
-            }    
-        
-      
-            Heals_boss hpboss=hitboss.GetComponent<Heals_boss>();
-            if(hp!=null)
+                return;
+            }
+        }
 
+        Collider2D hitBoss = Physics2D.OverlapCircle(
+            posionAttack.position,
+            attackrange,
+            Boss
+        );
+
+        if (hitBoss != null)
+        {
+            Heals_boss hpBoss = hitBoss.GetComponent<Heals_boss>();
+
+            if (hpBoss != null)
             {
-                hpboss.takedame(dame);
-            }        
-           
-
-        
-
+                hpBoss.takedame(dame);
+            }
+        }
     }
+
     private void OnDrawGizmosSelected()
     {
         if (posionAttack == null)
             return;
 
         Gizmos.color = Color.red;
-
-        Gizmos.DrawWireSphere(
-            posionAttack.position,
-            attackrange
-        );
+        Gizmos.DrawWireSphere(posionAttack.position, attackrange);
     }
 }

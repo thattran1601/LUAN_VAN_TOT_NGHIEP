@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: -4195647796165820189, guid: 5b175ec39fb716248976e37dee6d9f52, type: 3}
   Name: 'Archery '
   Id: 2
-  cost: 15
-  Cooldown: 3
-  Hp: 100
-  dame: 15
+  cost: 25
+  Cooldown: 4
+  Hp: 250
+  dame: 26
