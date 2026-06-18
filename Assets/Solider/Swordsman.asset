@@ -20,3 +20,68 @@ MonoBehaviour:
   Cooldown: 5
   Hp: 170
   dame: 38
+  Level: 1
+  damageReduction: 5
+  LevelMax: 20
+  HpPerLevel: 50
+  DamePerLevel: 5
+  DamageReductionPerLevel: 0
+  baseGoldCost: 100
+  goldIncreasePerLevel: 100
+  levels:
+  - start: 1
+    end: 6
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 10
+    CostLv: 300
+  - start: 6
+    end: 9
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 20
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 20
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 20
+    CostLv: 400
+  - start: 10
+    end: 16
+    materialCosts:
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 20
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 20
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 20
+    CostLv: 500
+  - start: 16
+    end: 19
+    materialCosts:
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 30
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 30
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 30
+    CostLv: 500
+  - start: 9
+    end: 10
+    materialCosts:
+    - item: {fileID: 11400000, guid: fb9fda1879be4734f9b296ad6bfb5bd4, type: 2}
+      amount: 15
+    CostLv: 3000
+  - start: 19
+    end: 20
+    materialCosts:
+    - item: {fileID: 11400000, guid: fb9fda1879be4734f9b296ad6bfb5bd4, type: 2}
+      amount: 30
+    CostLv: 10000
+  iconSkill: {fileID: 7714841141060386749, guid: 6b7ee0728247ebb4e90a71b05008a893, type: 3}
+  ThongTinSkill: "\u0110\xF2n \u0111\xE1nh s\u1EBD \u0111\u01B0\u1EE3c \u0111\u1ED5i
+    th\xE0nh k\u1EF9 n\u0103ng g\xE2y dame aoe"
+  UnitId: 2

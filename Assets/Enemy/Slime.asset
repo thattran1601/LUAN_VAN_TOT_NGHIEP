@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9aa434aba0051149a6e731f662e35a6, type: 3}
+  m_Name: Slime
+  m_EditorClassIdentifier: 
+  enemyName: Slime
+  hp: 150
+  damage: 15
+  speed: "Ch\u1EADm"
+  icon: {fileID: 7433934793083656646, guid: 7096d2e1d4299f84aad3c727241b97cd, type: 3}
+  GiamThuong: 20%
+  skill: "Tri\u1EC7u h\u1ED3i th\xEAm 2 b\u1EA3n sao khi xu\u1EA5t hi\u1EC7n"
+  Counter: "Ch\u01B0a r\xF5"

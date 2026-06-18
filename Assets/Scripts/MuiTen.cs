@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class MuiTen : MonoBehaviour
 {
+    public static MuiTen Instance;
     public float dame;
     public int XuyenGiap;
-
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
-        
+        dame = Attack.Instance.dame;
+      
     }
 
     // Update is called once per frame
@@ -21,7 +26,9 @@ public class MuiTen : MonoBehaviour
     {
         if(collision.gameObject.layer==LayerMask.NameToLayer("Enemy_Body"))
         {
-           Heals enemy=collision.gameObject.GetComponent<Heals>();
+           
+            
+            Heals enemy=collision.gameObject.GetComponent<Heals>();
             if(enemy!=null)
             {
                 if(enemy.hasShield==true)
@@ -65,5 +72,14 @@ public class MuiTen : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if(collision.gameObject.layer==LayerMask.NameToLayer("Cong"))
+        {
+            HeathCong heath=collision.gameObject.GetComponent<HeathCong>();
+            if(heath !=null)
+            {
+                heath.TakeDame(dame);
+                Destroy(gameObject);
+            }    
+        }    
     }
 }

@@ -1,0 +1,1222 @@
+fileFormatVersion: 2
+guid: c26418acd7ce9754995d6ac371f5649d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1136973425090291293
+    second: UIMap_0
+  - first:
+      213: -3920359787221258394
+    second: UIMap_1
+  - first:
+      213: 2690733188177601559
+    second: UIMap_2
+  - first:
+      213: 2458098347050267668
+    second: UIMap_3
+  - first:
+      213: 7099102013530998613
+    second: UIMap_4
+  - first:
+      213: 2097811559101109814
+    second: UIMap_5
+  - first:
+      213: -5001022192983677867
+    second: UIMap_6
+  - first:
+      213: -1937687181880985351
+    second: UIMap_7
+  - first:
+      213: -515240908410221616
+    second: UIMap_8
+  - first:
+      213: -3282084824382158404
+    second: UIMap_9
+  - first:
+      213: 471690760466192682
+    second: UIMap_10
+  - first:
+      213: 2455965249985941583
+    second: UIMap_11
+  - first:
+      213: 1837172310507441469
+    second: UIMap_12
+  - first:
+      213: -342452734915671733
+    second: UIMap_13
+  - first:
+      213: -1919848673458101722
+    second: UIMap_14
+  - first:
+      213: 483486653693637267
+    second: UIMap_15
+  - first:
+      213: 6274224262818739404
+    second: UIMap_16
+  - first:
+      213: -8844110297515152368
+    second: UIMap_17
+  - first:
+      213: 4616500295516608056
+    second: UIMap_18
+  - first:
+      213: 1272984622764992967
+    second: UIMap_19
+  - first:
+      213: -1869596765985357116
+    second: UIMap_20
+  - first:
+      213: 2443892829990053623
+    second: UIMap_21
+  - first:
+      213: 1179467074160013324
+    second: UIMap_22
+  - first:
+      213: -2200848408181268812
+    second: UIMap_23
+  - first:
+      213: -719554974851465843
+    second: UIMap_24
+  - first:
+      213: 1968259493917523453
+    second: UIMap_25
+  - first:
+      213: 5367351704718514535
+    second: UIMap_26
+  - first:
+      213: -6320006223588214712
+    second: UIMap_27
+  - first:
+      213: -53896242310369411
+    second: UIMap_28
+  - first:
+      213: -8735056336705182491
+    second: UIMap_29
+  - first:
+      213: -8553226373678832602
+    second: UIMap_30
+  - first:
+      213: -8847506671061366946
+    second: UIMap_31
+  - first:
+      213: -8187016997289127956
+    second: UIMap_32
+  - first:
+      213: -7941284264528302781
+    second: UIMap_33
+  - first:
+      213: 8372717020250761669
+    second: UIMap_34
+  - first:
+      213: -1111464147146980445
+    second: UIMap_35
+  - first:
+      213: 4723021832427942832
+    second: UIMap_36
+  - first:
+      213: 7556222801121887959
+    second: UIMap_37
+  - first:
+      213: -705608777484092543
+    second: UIMap_38
+  - first:
+      213: 1578428360092299380
+    second: UIMap_39
+  - first:
+      213: -6914700774948561223
+    second: UIMap_40
+  - first:
+      213: -2227929333973126360
+    second: UIMap_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UIMap_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 352
+        width: 281
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56e0916e4757cf00800000000000000
+      internalID: 1136973425090291293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_1
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 356
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f63f26b851899c0800000000000000
+      internalID: -3920359787221258394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 262
+        width: 165
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7142eaa1497675520800000000000000
+      internalID: 2690733188177601559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 305
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414f7ee4c6bec1220800000000000000
+      internalID: 2458098347050267668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 305
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55786cc2ba3158260800000000000000
+      internalID: 7099102013530998613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 305
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6361ee19f7cec1d10800000000000000
+      internalID: 2097811559101109814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 263
+        width: 153
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554ec51efccc89ab0800000000000000
+      internalID: -5001022192983677867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 77
+        width: 16
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8f72e36c3fb15e0800000000000000
+      internalID: -1937687181880985351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_8
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 305
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db8578af1f79d8f0800000000000000
+      internalID: -515240908410221616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_9
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 266
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb94000dd31b372d0800000000000000
+      internalID: -3282084824382158404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 305
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29db6d5f38cb8600800000000000000
+      internalID: 471690760466192682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_11
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 266
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f409d12f167551220800000000000000
+      internalID: 2455965249985941583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_12
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 305
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3dcafe8b72fe7910800000000000000
+      internalID: 1837172310507441469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_13
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 266
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b498dfe4d0d5f3bf0800000000000000
+      internalID: -342452734915671733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_14
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 267
+        width: 89
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6226604adc35b55e0800000000000000
+      internalID: -1919848673458101722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 173
+        width: 165
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3923d07cc80b5b600800000000000000
+      internalID: 483486653693637267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 217
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4b27a89b5821750800000000000000
+      internalID: 6274224262818739404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_17
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 217
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c2c32ea88634580800000000000000
+      internalID: -8844110297515152368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_18
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 217
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836d0cb3f8a111040800000000000000
+      internalID: 4616500295516608056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_19
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 174
+        width: 152
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c9217415cc8aa110800000000000000
+      internalID: 1272984622764992967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_20
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 216
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2493a95abdd06e0800000000000000
+      internalID: -1869596765985357116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_21
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 216
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f66ea0a4937ae120800000000000000
+      internalID: 2443892829990053623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_22
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 216
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00b39b0e0f4e5010800000000000000
+      internalID: 1179467074160013324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_23
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 178
+        width: 89
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be1fd988040571e0800000000000000
+      internalID: -2200848408181268812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_24
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 129
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dfc9f0090a306f0800000000000000
+      internalID: -719554974851465843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_25
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 108
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd7eb8d499a05b10800000000000000
+      internalID: 1968259493917523453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 82
+        width: 164
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769955020f9ac7a40800000000000000
+      internalID: 5367351704718514535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_27
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 128
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84834c013d3da48a0800000000000000
+      internalID: -6320006223588214712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_28
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 128
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fac5637a5804ff0800000000000000
+      internalID: -53896242310369411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_29
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 128
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4a9a5ca88d6c680800000000000000
+      internalID: -8735056336705182491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_30
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 82
+        width: 152
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624ee591ee5dc4980800000000000000
+      internalID: -8553226373678832602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_31
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 85
+        width: 89
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e570d7b0f87573580800000000000000
+      internalID: -8847506671061366946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_32
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 85
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef0f7aea6fd16e80800000000000000
+      internalID: -8187016997289127956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_33
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 85
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d24604904eac190800000000000000
+      internalID: -7941284264528302781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_34
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 18
+        width: 95
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9e9e4f4cdd13470800000000000000
+      internalID: 8372717020250761669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_35
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 18
+        width: 99
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a3c8b83f394390f0800000000000000
+      internalID: -1111464147146980445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_36
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 18
+        width: 103
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3384c355b8b8140800000000000000
+      internalID: 4723021832427942832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_37
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 52
+        width: 109
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6c3906a981dd860800000000000000
+      internalID: 7556222801121887959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_38
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 14
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bb9ab2e8c2536f0800000000000000
+      internalID: -705608777484092543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_39
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 20
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47034ba0b34b7e510800000000000000
+      internalID: 1578428360092299380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_40
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 20
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be9215e74c0a00a0800000000000000
+      internalID: -6914700774948561223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIMap_41
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 20
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823fbd7231ec411e0800000000000000
+      internalID: -2227929333973126360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UIMap_0: 1136973425090291293
+      UIMap_1: -3920359787221258394
+      UIMap_10: 471690760466192682
+      UIMap_11: 2455965249985941583
+      UIMap_12: 1837172310507441469
+      UIMap_13: -342452734915671733
+      UIMap_14: -1919848673458101722
+      UIMap_15: 483486653693637267
+      UIMap_16: 6274224262818739404
+      UIMap_17: -8844110297515152368
+      UIMap_18: 4616500295516608056
+      UIMap_19: 1272984622764992967
+      UIMap_2: 2690733188177601559
+      UIMap_20: -1869596765985357116
+      UIMap_21: 2443892829990053623
+      UIMap_22: 1179467074160013324
+      UIMap_23: -2200848408181268812
+      UIMap_24: -719554974851465843
+      UIMap_25: 1968259493917523453
+      UIMap_26: 5367351704718514535
+      UIMap_27: -6320006223588214712
+      UIMap_28: -53896242310369411
+      UIMap_29: -8735056336705182491
+      UIMap_3: 2458098347050267668
+      UIMap_30: -8553226373678832602
+      UIMap_31: -8847506671061366946
+      UIMap_32: -8187016997289127956
+      UIMap_33: -7941284264528302781
+      UIMap_34: 8372717020250761669
+      UIMap_35: -1111464147146980445
+      UIMap_36: 4723021832427942832
+      UIMap_37: 7556222801121887959
+      UIMap_38: -705608777484092543
+      UIMap_39: 1578428360092299380
+      UIMap_4: 7099102013530998613
+      UIMap_40: -6914700774948561223
+      UIMap_41: -2227929333973126360
+      UIMap_5: 2097811559101109814
+      UIMap_6: -5001022192983677867
+      UIMap_7: -1937687181880985351
+      UIMap_8: -515240908410221616
+      UIMap_9: -3282084824382158404
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9aa434aba0051149a6e731f662e35a6, type: 3}
+  m_Name: Werebear
+  m_EditorClassIdentifier: 
+  enemyName: Were Bear
+  hp: 200
+  damage: 40
+  speed: Nhanh
+  icon: {fileID: -195695515886222138, guid: cee3349815c64f94ab58587a76ef0c42, type: 3}
+  GiamThuong: 10%
+  skill: "Dame c\xF3 t\u1EC9 g\xE2y ch\xED m\u1EA1ng, khi d\u01B0\u1EDBi 50%hp b\u1ED9c
+    ph\xE1t dame AOE "
+  Counter: "Ch\u01B0a r\xF5"

@@ -64,7 +64,7 @@ public class spawn : MonoBehaviour
                 Quaternion.identity
             );
             linh.GetComponent<AI_Chuyen_Dong>().GioiHanChuyeDong = GioiHanChuyenDong;
-
+         
             Gold_current -= Gold_Remove;
 
             GoldManager.instance.CurrentGold = Gold_current;

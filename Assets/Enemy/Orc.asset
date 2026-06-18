@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9aa434aba0051149a6e731f662e35a6, type: 3}
+  m_Name: Orc
+  m_EditorClassIdentifier: 
+  enemyName: Orc
+  hp: 80
+  damage: 25
+  speed: "R\u1EA5t Nhanh"
+  icon: {fileID: -747262651025688622, guid: 63765e9622a3c8c458b287e217608f05, type: 3}
+  GiamThuong: 0%
+  skill: "H\u1ED3i ph\u1EE5c 50% hp khi hp d\u01B0\u1EDBi 20%(1 l\u1EA7n m\u1ED7i
+    tr\u1EADn \u0111\u1EA5u)"
+  Counter: "D\xF9ng t\u01B0\u1EDBng c\xF3 kh\u1EA3 n\u0103ng s\u1ED1c dame nhanh"

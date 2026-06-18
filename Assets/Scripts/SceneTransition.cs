@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,39 +6,71 @@ using UnityEngine.UI;
 public class SceneTransition : MonoBehaviour
 {
     public static SceneTransition Instance;
-    public Image FadeImage;
-    public float fadeTime;
-    private void Start()
-    {
-        FadeImage.raycastTarget = false;
-        
-    }
+
+    public Image fadeImage;
+    public float fadeTime = 0.5f;
+
+    private bool isLoading;
+
     private void Awake()
     {
         Instance = this;
     }
-    public void LoadSceneManager(string scenename)
+
+    private void OnDestroy()
     {
-        StartCoroutine(LoadSence(scenename));
-    }    
-   public IEnumerator LoadSence(string sencename)
-    {
-        yield return Fade(0,1);
-        SceneManager.LoadScene(sencename);
-        FadeImage.raycastTarget=true;
+        if (Instance == this)
+            Instance = null;
     }
-    public IEnumerator Fade(float from, float to)
+
+    public void LoadSceneManager(string sceneName)
     {
-        float time = 0;
-        Color color=FadeImage.color;
-        while(time<fadeTime)
+        if (isLoading) return;
+
+        if (!gameObject.activeInHierarchy)
         {
+            SceneManager.LoadScene(sceneName);
+            return;
+        }
+
+        StartCoroutine(LoadScene(sceneName));
+    }
+
+    private IEnumerator LoadScene(string sceneName)
+    {
+        isLoading = true;
+
+        yield return Fade(1);
+
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private IEnumerator Fade(float targetAlpha)
+    {
+        if (fadeImage == null)
+        {
+            Debug.LogWarning("SceneTransition chưa gán Fade Image");
+            yield break;
+        }
+
+        Color color = fadeImage.color;
+        float startAlpha = color.a;
+        float time = 0;
+
+        while (time < fadeTime)
+        {
+            if (fadeImage == null)
+                yield break;
+
             time += Time.deltaTime;
-            color.a = Mathf.Lerp(from, to, time / fadeTime);
-            FadeImage.color= color;
+
+            color.a = Mathf.Lerp(startAlpha, targetAlpha, time / fadeTime);
+            fadeImage.color = color;
+
             yield return null;
         }
-        color.a = to;
-        FadeImage.color= color;
-    }    
+
+        color.a = targetAlpha;
+        fadeImage.color = color;
+    }
 }

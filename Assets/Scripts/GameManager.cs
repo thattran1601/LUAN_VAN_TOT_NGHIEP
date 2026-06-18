@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using NUnit.Framework;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool IsWin;
     public GameObject gameOver;
     public GameObject Victory;
+    public ShowItemVictory itemVictory;
     private void Awake()
     {
         instance = this;
@@ -32,22 +35,19 @@ public class GameManager : MonoBehaviour
         int currenmap = GameData.MapInt;
         IsWin = true;
         Victory.SetActive(true);
-        SaveManager.instance.UnLockMap(GameData.MapInt + 1);
+        MapData mapData = ItemMap.Instance.mapDatas[currenmap-1];
+        List<RewardResult> rewards = ItemMap.Instance.AddItemWin(mapData);
+        itemVictory.ShowItem(rewards,mapData);
+        InventoryManager.Instance.LoadInventory();
+        SaveGameManager.instance.LoadMap(mapData.IdMap+1);
         switch (currenmap)
         {
             case 1:
-                SaveManager.instance.UnLockUnit(3);
+                SaveGameManager.instance.SaveUnit(2,true);
+                //UnitListManager.Instance.RefreshList();
+                //SaveGameManager.instance.LoadUnit();
                 break; 
-            case 2:
-                SaveManager.instance.UnLockUnit(4);
-                break;
-            case 3:
-                SaveManager.instance.UnLockUnit(5);
-                break; 
-            case 4:
-                SaveManager.instance.UnLockUnit(6);
-                break; 
-
+         
         }
           
     }    

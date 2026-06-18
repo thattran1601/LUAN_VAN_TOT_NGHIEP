@@ -10,14 +10,39 @@ public class KnockBack : MonoBehaviour
     public float radius = 1f;
     public LayerMask enemy;
     public LayerMask boss;
+    public GameObject BuffAttack;
+    private Coroutine hideCoroutine;
+    public int damemove;
 
-    
+
     void Start()
     {
-        
+        BuffAttack.SetActive(false);
+        damemove = dame;
+
+
     }
 
+    public void Buffattack()
+    {
+        BuffAttack.SetActive(true);
+        if (hideCoroutine != null)
+        {
+            StopCoroutine(hideCoroutine);
+        }
+        hideCoroutine = StartCoroutine(buff());
+    }
+    IEnumerator buff()
+    {
 
+        dame = dame * 2;
+        yield return new WaitForSeconds(5f);
+        BuffAttack.SetActive(false);
+        dame = damemove;
+
+
+
+    }
     void Update()
     {
         

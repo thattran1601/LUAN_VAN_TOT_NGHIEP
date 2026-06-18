@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a1079d0d515474d9bcedca7f151d0b, type: 3}
+  m_Name: "R\u01B0\u01A1ng \u0111\u1ED3ng 1"
+  m_EditorClassIdentifier: 
+  chestName: "R\u01B0\u01A1ng B\u1EA1c"
+  chestIcon: {fileID: 0}
+  priceGold: 15000
+  priceGem: 0
+  rewards:
+  - item: {fileID: 11400000, guid: 3de5d53f753fd884b93a9d0886dcdb0f, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 20
+  - item: {fileID: 11400000, guid: 0c83ed64dcd792a409c4da3936aeda69, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 20
+  - item: {fileID: 11400000, guid: fb9fda1879be4734f9b296ad6bfb5bd4, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 1
+  - item: {fileID: 11400000, guid: e12ca8a944d962a4bb37589190258bf8, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 1
+  - item: {fileID: 11400000, guid: 90206c250bf3ebb4196e89b928d8af58, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 1
+  - item: {fileID: 11400000, guid: a4ad1c62868015a48a7535e023872e53, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 1
+  - item: {fileID: 11400000, guid: a4ad1c62868015a48a7535e023872e53, type: 2}
+    unit: {fileID: 0}
+    amount: 1
+    rate: 1

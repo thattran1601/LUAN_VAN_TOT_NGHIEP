@@ -28,6 +28,8 @@ public class SkillManager : MonoBehaviour
     public GameObject MagicCirle;
     public float DelayMagic=0.5f;
     public float DelayMagicCirle;
+    public ManaManager ManagerMana;
+    public int Mana;
     private void Awake()
     {
         Instance = this;
@@ -85,13 +87,17 @@ public class SkillManager : MonoBehaviour
 
     public IEnumerator skill(Vector3 centerpos)
     {
-        GameObject Magic = Instantiate(MagicCirle, centerpos, Quaternion.identity);
-        for(int i=0;i<countSkill;i++)
+        if (ManagerMana.CurrentMana >= Mana)
         {
-            CastSkill(centerpos);
-            yield return new WaitForSeconds(delay);
+            ManagerMana.UseMana(Mana);
+            GameObject Magic = Instantiate(MagicCirle, centerpos, Quaternion.identity);
+            for (int i = 0; i < countSkill; i++)
+            {
+                CastSkill(centerpos);
+                yield return new WaitForSeconds(delay);
+            }
+            Destroy(Magic, 1f);
         }
-        Destroy(Magic,1f);
     }  
     public void CastSkill(Vector3 centerpos)
     {
@@ -110,9 +116,11 @@ public class SkillManager : MonoBehaviour
 
     public void StartSelectingSkill()
     {
-        isSelectingSkill = true;
-        Cursor.visible = false;
-        skillPreview.SetActive(true);
+      
+            isSelectingSkill = true;
+            Cursor.visible = false;
+            skillPreview.SetActive(true);
+        
 
         //Cursor.SetCursor(
         //    skillCursor,

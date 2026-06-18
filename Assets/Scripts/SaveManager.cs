@@ -15,33 +15,20 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.Save();
 
     }   
+    public void Delete()
+    {
+        SaveGameManager.instance.DeleteAllSave();
+        InventoryManager.Instance.LoadInventory();
+        SceneTransition.Instance.LoadSceneManager("MainMenu");
+    }    
     public bool IsUnitUnlocked(int unitid)
     {
-        if(unitid==1||unitid==2)
+        if(unitid==0||unitid==1)
         {
             return true;
         }
         return PlayerPrefs.GetInt("Unit_" + unitid, 0) == 1;
     }    
-    public void UnLockMap(int id)
-    {
-        int unlockmap = PlayerPrefs.GetInt("UnLockMap", 1);
-        if(id>unlockmap)
-        {
-            PlayerPrefs.SetInt("UnLockMap", id);
-            PlayerPrefs.Save();
-            Debug.Log("Đã mở map: " + id);
-        }    
-    }    
-    public int GetUnLockMap()
-    {
-        return PlayerPrefs.GetInt("UnLockMap", 1);
-    }    
-    public void ResetMap()
-    {
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
-        SceneTransition.Instance.LoadSceneManager("MainMenu");
-        ButtonResetData.instance.ResetPanel.SetActive(false);
-    }    
+      
+   
 }

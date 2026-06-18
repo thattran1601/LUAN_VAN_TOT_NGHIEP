@@ -20,11 +20,6 @@ public class FireballProjectile : MonoBehaviour
 
     void Update()
     {
-        //transform.Rotate(
-        //    0,
-        //    0,
-        //    300 * Time.deltaTime
-        //);
 
         transform.position =
             Vector3.MoveTowards(

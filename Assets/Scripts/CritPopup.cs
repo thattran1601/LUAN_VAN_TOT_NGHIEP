@@ -21,6 +21,15 @@ public class CritPopup : MonoBehaviour
             textCrit.color = Color.white;
         }
     }
+    public void setup1(bool isdame,float dame)
+    {
+        if(isdame==true)
+        {
+            textCrit.text = dame.ToString();
+            textCrit.color = Color.red;
+        }
+     
+    }
     private void Update()
     {
         transform.position += Vector3.up * speed * Time.deltaTime;

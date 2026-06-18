@@ -24,6 +24,9 @@ public class Heals : MonoBehaviour
     public bool isHit;
     public bool hasShield;
     public bool IsnotKnock;
+    public GameObject ngonlua;
+    private Coroutine hideCoroutine1;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -36,6 +39,7 @@ public class Heals : MonoBehaviour
         currentHp = maxHp;
 
         hpCanvas.SetActive(false);
+        ngonlua.SetActive(false);
 
         UpdateBar();
     }
@@ -43,7 +47,9 @@ public class Heals : MonoBehaviour
     public void TakeDamage(float damage)
     {
         float dame = damage * damageReduction;
-            currentHp -= dame;
+        AudioManager.instance.PlaySFX(AudioManager.instance.Hit);
+
+        currentHp -= dame;
 
             currentHp = Mathf.Clamp(currentHp, 0, maxHp);
         
@@ -122,7 +128,33 @@ public class Heals : MonoBehaviour
 
         hideCoroutine = StartCoroutine(HideHpBar());
     }
+   
+    public void NgonLuaSkill(int dame)
+    {
+        ngonlua.SetActive(true);
+        if (hideCoroutine1!=null)
+        {
+            StopCoroutine(hideCoroutine1);
+        }
+        hideCoroutine1 = StartCoroutine(showNgonluaSkill(dame));
+    }
+  
+    public IEnumerator showNgonluaSkill(int dame)
+    {
+       
+        float time = 5f;
+        while(time>0)
+        {
+            TakeDamage(dame);
+            DamePopup.intance.ShowDame(true, gameObject.transform.position, dame);
+            yield return new WaitForSeconds(1f);
+            time -= 1f;  
+        }
+     
+        ngonlua.SetActive(false);
+        
 
+    }
     IEnumerator HideHpBar()
     {
         yield return new WaitForSeconds(2f);

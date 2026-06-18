@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0852b5b4ab90c1b49994d30722efc497, type: 3}
+  m_Name: CastleMagic
+  m_EditorClassIdentifier: 
+  CastleName: Castle Magic
+  ID: 1
+  hp: 500
+  Lv: 0
+  icon: {fileID: -6655299744282928956, guid: a4550371756d5d847a9be2d51aa0ff35, type: 3}
+  iconSkill:
+  - {fileID: 1999865947741875889, guid: ef5b2ecdd734810449f2ea0af38e6ba0, type: 3}
+  - {fileID: -7510463089226064464, guid: e0974a91c837ec540a4197e49d626690, type: 3}
+  - {fileID: 2663093397753820165, guid: 9d10edbb20809a349992a113b66eddb1, type: 3}
+  - {fileID: 1737202672831343693, guid: eb17d5c088b1eef4784d323896001bc4, type: 3}
+  MoTaskill:
+  - "C\u1EA7u l\u1EEDa tri\u1EC7u h\u1ED3i nhi\u1EC1u qu\u1EA3 c\u1EA7u l\u1EEDa
+    \u0111\u1ED3ng th\u1EDDi g\xE2y s\xE1t th\u01B0\u01A1ng l\xEAn 1 ph\u1EA1m vi
+    th\u1EDDi gian h\u1ED3i chi\xEAu 30s mana ti\xEAu t\u1ED1n 50"
+  - "Tri\u1EC7u h\u1ED3i m\u1ED9t qu\u1EA3 c\u1EA7u b\u0103ng g\xE2y s\xE1t th\u01B0\u01A1ng
+    \u0111\u1ED3ng th\u1EDDi l\xE0m cho\xE1ng k\u1EBB \u0111\u1ECBch trong 2s th\u1EDDi
+    gian h\u1ED3i chi\xEAu 60s mana ti\xEAu t\u1ED1n 60"
+  - "Tri\u1EC7u h\u1ED3i 1 l\u1ED1c xo\xE1y c\xE1t qu\xE9t c\u1EA3 b\u1EA3n \u0111\u1ED3
+    g\xE2y s\xE1t th\u01B0\u01A1ng k\xE8m h\u1EA5t tung k\u1EBB \u0111\u1ECBch trong
+    2s  th\u1EDDi gian h\u1ED3i chi\xEAu 60s mana ti\xEAu t\u1ED1n 50"
+  - "T\u1EA1o ra m\u1ED9t v\xF9ng \u0111\u1ED9c g\xE2y s\xE1t th\u01B0\u01A1ng c\u1EF1c
+    l\u1EDBn m\u1ED7i khi k\u1EBB \u0111\u1ECBch \u1EDF trong ph\u1EA1m vi th\u1EDDi
+    gian h\u1ED3i chi\xEAu 60s mana ti\xEAu t\u1ED1n 90"
+  HpPerLevel: 50
+  coinUpgrade: 500
+  baseGoldCost: 500
+  goldIncreasePerLevel: 100

@@ -11,6 +11,7 @@ public class Heals_boss : MonoBehaviour
     Animator animator;
     public bool Isdieboss=false;
     private SpriteRenderer sr;
+    int count = 0;
     private void Awake()
     {
         instance = this;
@@ -31,12 +32,19 @@ public class Heals_boss : MonoBehaviour
         {
             takedame(100);
         }
-        if (hphientai <= 0)
+        if (hphientai <= 0&&count==0)
+        {
+            count = 1;
             die();
+
+        }
+
     }
        
     public void takedame(float amount)
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.Hit);
+
         hphientai -= amount;
         StartCoroutine(hit());
         BossUI.Instance.upHP();

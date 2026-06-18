@@ -3,10 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Heals_Linh : MonoBehaviour
 {
-   
+    
     [Header("HP")]
     public int maxHp = 100;
-    private float currentHp;
+    public float currentHp;
 
     [Header("HP BAR")]
     public GameObject hpCanvas;
@@ -17,7 +17,7 @@ public class Heals_Linh : MonoBehaviour
 
     private bool isDead = false;
     private SpriteRenderer sr;
-    public float damageReduction = 0f;
+    public float damageReduction;
     private void Awake()
     {
         
@@ -35,11 +35,12 @@ public class Heals_Linh : MonoBehaviour
         UpdateBar();
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         if (isDead)
             return;
         float dame = damage * damageReduction;
+        AudioManager.instance.PlaySFX(AudioManager.instance.Hit);
         currentHp -= dame;
 
         currentHp = Mathf.Clamp(currentHp, 0, maxHp);

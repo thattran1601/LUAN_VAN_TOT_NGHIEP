@@ -19,8 +19,13 @@ MonoBehaviour:
   - {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
   - {fileID: 1220201138100830101, guid: 62504619cf7fe864981d99f5a0647aa1, type: 3}
   - {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
-  Boss: {fileID: 4769411976371186232, guid: 869b97fabb3c23b4e8421c1df166a256, type: 3}
-  Background: {fileID: 9048931282279704766, guid: 173c67f96f608fd4593cd024067ef46f, type: 3}
+  IconEnemy:
+  - {fileID: -747262651025688622, guid: 63765e9622a3c8c458b287e217608f05, type: 3}
+  - {fileID: -1984506825430022774, guid: c75d962250584f34cb8776d05db95722, type: 3}
+  - {fileID: 5831249578833918177, guid: 4d02dabe21865834588948fd8cfa304c, type: 3}
+  Boss: {fileID: 4877410514158154146, guid: c257e11d802e58c42a9ba98c62cbd325, type: 3}
+  IconBoss: {fileID: -4551999497626061999, guid: 38e26291822c9b9479504c21a5a98126, type: 3}
+  Map: {fileID: 5537375733245300900, guid: 5c793ec6f32df8c4ca2bb953dfcdd0de, type: 3}
   wave:
   - enemyinfo:
     - enemyprelaf: {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
@@ -62,3 +67,14 @@ MonoBehaviour:
       count: 8
     delayspawn: 1
     isboss: 1
+  Background: {fileID: 4664052209231028646, guid: 6ba14cf99382a1849bd2b4eb5c5683a8, type: 3}
+  Audioclip: {fileID: 8300000, guid: c1d0bcb03593d5e4ebb43fe837e5af42, type: 3}
+  Items:
+  - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+    minAmount: 0
+    maxAmount: 3
+  - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+    minAmount: 0
+    maxAmount: 1
+  CoinMin: 100
+  CoinMax: 200

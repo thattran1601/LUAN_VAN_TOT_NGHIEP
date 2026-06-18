@@ -15,8 +15,72 @@ MonoBehaviour:
   prelaf: {fileID: 6131517407534488780, guid: 12345006e470a7e44848356d5f1247b7, type: 3}
   icon: {fileID: -4195647796165820189, guid: 5b175ec39fb716248976e37dee6d9f52, type: 3}
   Name: 'Archery '
-  Id: 2
+  Id: 1
   cost: 25
   Cooldown: 4
   Hp: 250
   dame: 26
+  Level: 2
+  damageReduction: 5
+  LevelMax: 20
+  HpPerLevel: 10
+  DamePerLevel: 3
+  DamageReductionPerLevel: 0
+  baseGoldCost: 100
+  goldIncreasePerLevel: 100
+  levels:
+  - start: 1
+    end: 6
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 10
+    CostLv: 200
+  - start: 6
+    end: 10
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 10
+    CostLv: 250
+  - start: 11
+    end: 16
+    materialCosts:
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 15
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 15
+    CostLv: 300
+  - start: 16
+    end: 20
+    materialCosts:
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 20
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 30
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 20
+    CostLv: 400
+  - start: 10
+    end: 11
+    materialCosts:
+    - item: {fileID: 11400000, guid: bcf425348dec76747b330f17fcf0d075, type: 2}
+      amount: 1
+    CostLv: 1000
+  - start: 10
+    end: 11
+    materialCosts:
+    - item: {fileID: 11400000, guid: bcf425348dec76747b330f17fcf0d075, type: 2}
+      amount: 10
+    CostLv: 1000
+  iconSkill: {fileID: 8620046016495470792, guid: 91ae00dae1ccb5e48b894bc8af2649e2, type: 3}
+  ThongTinSkill: "T\u0103ng t\u1EA5n c\xF4ng c\u1EE7a t\u01B0\u1EDBng l\xEAn 50%"
+  UnitId: 1

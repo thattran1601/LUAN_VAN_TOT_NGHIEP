@@ -10,6 +10,7 @@ public class ButtonSkill : MonoBehaviour
     public TextMeshProUGUI TextCoolDown;
     public GameObject CoolDown;
     public bool Iscooldown=false;
+
     private void Awake()
     {
         instance = this;
@@ -30,8 +31,11 @@ public class ButtonSkill : MonoBehaviour
             return;
         if (UISetting.intance.isSetting == true)
             return;
-        SkillManager.Instance.StartSelectingSkill();
-        StartCoroutine(CooldownSKill());
+       
+            SkillManager.Instance.StartSelectingSkill();
+            StartCoroutine(CooldownSKill());
+           
+
     }
     public void OnclickSkillDatBiet()
     {

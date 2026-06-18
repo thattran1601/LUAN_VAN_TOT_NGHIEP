@@ -13,14 +13,20 @@ MonoBehaviour:
   m_Name: Map_3
   m_EditorClassIdentifier: 
   IdMap: 3
-  NameMap: 
+  NameMap: Map 3
   MaxWave: 15
   Enemy:
   - {fileID: 3187431576798383245, guid: 8ac0aa8f086adf940b6fb188f27ca930, type: 3}
   - {fileID: 8192253396304101935, guid: fde2adc0cf0035346b156201e7c747e4, type: 3}
   - {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
-  Boss: {fileID: 4769411976371186232, guid: 869b97fabb3c23b4e8421c1df166a256, type: 3}
-  Background: {fileID: 5797066345850931948, guid: 84271656654179f4eae0a34257a42e8b, type: 3}
+  IconEnemy:
+  - {fileID: -4391229105808040339, guid: 98d7a44563b0469459aabb1e2f6801af, type: 3}
+  - {fileID: 5831249578833918177, guid: 4d02dabe21865834588948fd8cfa304c, type: 3}
+  - {fileID: 7792352775276265700, guid: 8f40d3fcb263e5141bd7a8c6ab783ae7, type: 3}
+  - {fileID: -6702294005266946484, guid: 37ea8191b38ed984187321f75e2f1798, type: 3}
+  Boss: {fileID: 4877410514158154146, guid: c257e11d802e58c42a9ba98c62cbd325, type: 3}
+  IconBoss: {fileID: -4551999497626061999, guid: 38e26291822c9b9479504c21a5a98126, type: 3}
+  Map: {fileID: 7354140218422576596, guid: 4991603c4b0b8604b935d5b061634317, type: 3}
   wave:
   - enemyinfo:
     - enemyprelaf: {fileID: 4100522023538957387, guid: b82ea600c84d85346a3538b59eacadbc, type: 3}
@@ -55,10 +61,21 @@ MonoBehaviour:
       count: 15
     - enemyprelaf: {fileID: 4098382679523597487, guid: cbc79324c3abcf6448b72db5f9fc9caa, type: 3}
       count: 15
-    - enemyprelaf: {fileID: 3414246991073046164, guid: dde198cabaa8f0e4bb97f4a80fe9d165, type: 3}
+    - enemyprelaf: {fileID: 6152735316436746358, guid: 57380e81b10b76b469d922dd3193d71e, type: 3}
       count: 5
     delayspawn: 1
     isboss: 0
   - enemyinfo: []
     delayspawn: 1
     isboss: 1
+  Background: {fileID: -3640920216992803487, guid: e8f25b2d5e760a84794a830f1557f219, type: 3}
+  Audioclip: {fileID: 8300000, guid: ccc912422781d69439256667e74b4ebc, type: 3}
+  Items:
+  - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+    minAmount: 1
+    maxAmount: 7
+  - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+    minAmount: 0
+    maxAmount: 5
+  CoinMin: 500
+  CoinMax: 1000

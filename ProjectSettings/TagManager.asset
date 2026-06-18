@@ -24,9 +24,9 @@ TagManager:
   - Boss_Body
   - Linh_Tank
   - arrowEnemy
-  - 
-  - 
-  - 
+  - Cong
+  - Kiem_Lua
+  - Ground
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: HieuUng
     uniqueID: 3403477955
+    locked: 0
+  - name: Portal
+    uniqueID: 3770501365
     locked: 0
   m_RenderingLayers:
   - Default

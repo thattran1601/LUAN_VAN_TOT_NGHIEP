@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class arrowEnemy : MonoBehaviour
 {
+    public static arrowEnemy Instance;
     public int dame;
+    
 
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -18,7 +20,9 @@ public class arrowEnemy : MonoBehaviour
     {
         if(collision.gameObject.layer==LayerMask.NameToLayer("Linh_Body"))
         {
+          
             Heals_Linh health=collision.gameObject.GetComponent<Heals_Linh>();
+           
             if(health!=null)
             {
                 int random = Random.Range(1, 100);

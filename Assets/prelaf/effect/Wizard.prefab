@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e2bca6aff339442ac0fb57824a8423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dame: 50
+  dame: 20
   prelafWizard: {fileID: 7070533397241377129, guid: 7f0383800f7c85d438eef1753648de96, type: 3}
   enemy: 0
 --- !u!58 &8186372460246020506

@@ -25,10 +25,13 @@ public class UnitTooltipUI : MonoBehaviour
         {
             finalPosition += offleft;
         }
+        UnitRuntimeData runtime = UnitOwnedManager.Instance.GetRuntime(unit.Id);
+        int hp = UnitStatCalculator.getHp(unit, runtime.Level);
+        int dame = UnitStatCalculator.getDame(unit, runtime.Level);
         tooltipRect.position = finalPosition;
         text.text= unit.name +"\n"+
-           "HP: "+ unit.Hp+"\n"+
-           "Damage: " + unit.dame+"\n"+
+           "HP: "+ hp+"\n"+
+           "Damage: " + dame+"\n"+
             "Cooldown: " + unit.Cooldown+"s"+"\n"+
             "Cost: " + unit.cost+"\n";
     }    

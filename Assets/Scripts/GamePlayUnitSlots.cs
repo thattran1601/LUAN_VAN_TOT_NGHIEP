@@ -11,6 +11,7 @@ public class GamePlayUnitSlots : MonoBehaviour
     public int cooldown;
     public TextMeshProUGUI TextCooldown;
     public Button button;
+    public TextMeshProUGUI TextCost;
     
     public int coin;
     public bool iscooldown;
@@ -20,12 +21,13 @@ public class GamePlayUnitSlots : MonoBehaviour
         icon.sprite = data.icon;
         button.interactable = true;
         cooldown = data.Cooldown;
+        TextCost.text = data.cost.ToString();
         coin=data.cost;
 
     }
     private void Update()
     {
-        bool enoughGold = spawn.instance.Gold_current >= coin;
+        bool enoughGold = GoldManager.instance.CurrentGold >= coin;
         if(enoughGold==true && iscooldown==false)
         {
             icon.color=Color.white;
@@ -42,11 +44,10 @@ public class GamePlayUnitSlots : MonoBehaviour
         if (unitData == null)
             return;
 
-        if (spawn.instance.Gold_current >= coin)
+        if (GoldManager.instance.CurrentGold>= coin)
         {
-            spawn.instance.Gold_current -= coin;
+            GoldManager.instance.CurrentGold -= coin;
 
-            GoldManager.instance.CurrentGold = spawn.instance.Gold_current;
             GoldManager.instance.UpdateGoldUI();
 
             Vector3 pos = spawn.instance.spawnpoint.position;
@@ -60,7 +61,12 @@ public class GamePlayUnitSlots : MonoBehaviour
                 pos,
                 Quaternion.identity
             );
-
+            unit.GetComponent<AI_Chuyen_Dong>().setup(unitData);
+            UnitRuntimeStats stats = unit.GetComponent<UnitRuntimeStats>();
+            if(stats!=null)
+            {
+                stats.setup(unitData);
+            }    
             Debug.Log("UnitPos After Spawn: " + unit.transform.position);
 
             StartCoroutine(CooldownRoutine());

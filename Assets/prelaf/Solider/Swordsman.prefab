@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6887781122770364127}
   - component: {fileID: 5399347199986070329}
   - component: {fileID: 6624447950512818416}
+  - component: {fileID: -6500459602221071496}
+  - component: {fileID: 4346831948756943518}
   m_Layer: 7
   m_Name: Swordsman
   m_TagString: Untagged
@@ -38,6 +40,7 @@ Transform:
   m_Children:
   - {fileID: 7897635263869947228}
   - {fileID: 876053247750801449}
+  - {fileID: 7101761989660991889}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6287414266247612843
@@ -197,6 +200,14 @@ MonoBehaviour:
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
   IsStun: 0
+  isTour: 0
+  IsSkill: 0
+  runtimeData:
+    UnitId: 0
+    Level: 0
+    iSlock: 0
+    EquippedTreasureId: 0
+  unitdata: {fileID: 0}
 --- !u!114 &5399347199986070329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,9 +221,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 170
+  currentHp: 0
   hpCanvas: {fileID: 2611978023713934874}
   Hpfill: {fileID: 2374250879336282376}
-  damageReduction: 1
+  damageReduction: 0.95
 --- !u!114 &6624447950512818416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +246,54 @@ MonoBehaviour:
   bosslayer:
     serializedVersion: 2
     m_Bits: 8192
+  Conglayer:
+    serializedVersion: 2
+    m_Bits: 65536
+  BuffAttack: {fileID: 6607492880394759521}
+  damemove: 0
+--- !u!114 &-6500459602221071496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944870209765339711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07236706f6de0e144964d2f35880d5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitData: {fileID: 11400000, guid: 1fdedcea6243b3442b18de1342f0bb61, type: 2}
+  Level: 0
+  dame: 0
+  Hp: 0
+  damageReduction: 0
+--- !u!114 &4346831948756943518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944870209765339711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ddf7616cbe195042ba89ccb96407542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 38
+  posionAttack: {fileID: 7897635263869947228}
+  attackrange: 1
+  enemy:
+    serializedVersion: 2
+    m_Bits: 64
+  Boss:
+    serializedVersion: 2
+    m_Bits: 8192
+  Conglayer:
+    serializedVersion: 2
+    m_Bits: 65536
+  BuffAttack: {fileID: 6607492880394759521}
+  damemove: 0
 --- !u!1 &1104414196946259319
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.1, y: 1.66}
+  m_AnchoredPosition: {x: -0.1, y: 1.53}
   m_SizeDelta: {x: 105.1662, y: 17.1243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6090480134640437181
@@ -555,3 +615,113 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6607492880394759521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7101761989660991889}
+  - component: {fileID: 7988909452734093134}
+  - component: {fileID: 7986798625207171754}
+  m_Layer: 0
+  m_Name: CuongBao (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7101761989660991889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6607492880394759521}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.12, y: 1.96, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4382898108785621851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7988909452734093134
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6607492880394759521}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -891489341
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8114546989993831635, guid: a3ee991fc414ac743b9df42a2dc90e0f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.82, y: 0.82}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &7986798625207171754
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6607492880394759521}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80fd145f8c4bd3540b461b29a7930dd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

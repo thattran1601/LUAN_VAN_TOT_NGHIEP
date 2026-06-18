@@ -10,6 +10,8 @@ public class UISetting : MonoBehaviour
     public bool isSetting;
     public Image FadeImage;
     public float FadeTime;
+    public Slider Music;
+    public Slider SFX;
     private void Awake()
     {
         intance = this;
@@ -17,6 +19,29 @@ public class UISetting : MonoBehaviour
     void Start()
     {
         PanelSetting.SetActive(false);
+
+        Music.value = PlayerPrefs.GetFloat("MusicVolume", 1f);
+        SFX.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
+
+        AudioManager.instance.SetMusicVolume(Music.value);
+        AudioManager.instance.SetSFXVolume(SFX.value);
+
+        Music.onValueChanged.AddListener(OnMusicChanged);
+        SFX.onValueChanged.AddListener(OnSFXChanged);
+    }
+
+    void OnMusicChanged(float value)
+    {
+        AudioManager.instance.SetMusicVolume(value);
+        PlayerPrefs.SetFloat("MusicVolume", value);
+        PlayerPrefs.Save();
+    }
+
+    void OnSFXChanged(float value)
+    {
+        AudioManager.instance.SetSFXVolume(value);
+        PlayerPrefs.SetFloat("SFXVolume", value);
+        PlayerPrefs.Save();
     }
     void Update()
 
@@ -25,21 +50,31 @@ public class UISetting : MonoBehaviour
     }
     public void Setting()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.ButtonClick);
+
+
         isSetting = true;
         PanelSetting.SetActive(true);
-    }    
+
+    }
     public void Close()
     {
-        isSetting=false;
+        AudioManager.instance.PlaySFX(AudioManager.instance.ButtonClick);
+
+        isSetting = false;
         PanelSetting.SetActive(false);
     }
     public void Quit()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.ButtonClick);
+
         PanelSetting.SetActive(false);
         SceneTransition.Instance.LoadSceneManager("Lobby");
     }
     public void Restart()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.ButtonClick);
+
         PanelSetting.SetActive(false);
         StartCoroutine(StartFade());
  

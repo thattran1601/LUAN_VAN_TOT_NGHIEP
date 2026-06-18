@@ -16,8 +16,14 @@ MonoBehaviour:
   NameMap: Map 2
   MaxWave: 10
   Enemy: []
-  Boss: {fileID: 4769411976371186232, guid: 869b97fabb3c23b4e8421c1df166a256, type: 3}
-  Background: {fileID: 5565117820797472466, guid: dab39ba64cb002844811b0a52c2eb208, type: 3}
+  IconEnemy:
+  - {fileID: -5747784035168019909, guid: 28cbfa3abfed9a0499e7f6448517232a, type: 3}
+  - {fileID: -6702294005266946484, guid: 37ea8191b38ed984187321f75e2f1798, type: 3}
+  - {fileID: 5831249578833918177, guid: 4d02dabe21865834588948fd8cfa304c, type: 3}
+  - {fileID: -1984506825430022774, guid: c75d962250584f34cb8776d05db95722, type: 3}
+  Boss: {fileID: 4877410514158154146, guid: c257e11d802e58c42a9ba98c62cbd325, type: 3}
+  IconBoss: {fileID: -4551999497626061999, guid: 38e26291822c9b9479504c21a5a98126, type: 3}
+  Map: {fileID: 5624738702831054168, guid: c8165935652496b479ffcafe141e70c8, type: 3}
   wave:
   - enemyinfo:
     - enemyprelaf: {fileID: 1220201138100830101, guid: 62504619cf7fe864981d99f5a0647aa1, type: 3}
@@ -59,3 +65,14 @@ MonoBehaviour:
       count: 8
     delayspawn: 1
     isboss: 1
+  Background: {fileID: -8495734320090092444, guid: 3386ac682987ee041b5915b3a9bc5a28, type: 3}
+  Audioclip: {fileID: 8300000, guid: f4a5c7faf25b8884d9cf13b4328a327d, type: 3}
+  Items:
+  - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+    minAmount: 1
+    maxAmount: 5
+  - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+    minAmount: 0
+    maxAmount: 3
+  CoinMin: 200
+  CoinMax: 350

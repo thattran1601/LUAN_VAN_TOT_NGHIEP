@@ -6,6 +6,7 @@ public class DamePopup : MonoBehaviour
     public GameObject CritPrelaf;
     public Canvas canvas;
     public GameObject textprelaf;
+    public GameObject DamePrelaf;
 
     private void Awake()
     {
@@ -17,6 +18,12 @@ public class DamePopup : MonoBehaviour
         GameObject obj = Instantiate(CritPrelaf, camenra, Quaternion.identity, canvas.transform);
         obj.GetComponent<CritPopup>().setup(iscrit, dame);
     }    
+    public void ShowDame(bool isdame, Vector3 screen,float dame)
+    {
+        Vector3 camera = Camera.main.WorldToScreenPoint(screen);
+        GameObject ojb = Instantiate(DamePrelaf, camera, Quaternion.identity, canvas.transform);
+        ojb.GetComponent<CritPopup>().setup1(isdame, dame);
+    }
     public void showtext(string text, Vector3 screen)
     {
         Vector3 camera = Camera.main.WorldToScreenPoint(screen);

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17e66b97c580d5459c7e290ba85dd5c, type: 3}
+  m_Name: CuongLoiThuong
+  m_EditorClassIdentifier: 
+  Id: 16
+  Name: "Cu\u1ED3ng L\xF4i Th\u01B0\u01A1ng"
+  Item: {fileID: 3439692453798239773, guid: b96c7408396c1dc49a462449dca5df29, type: 3}
+  Description: "B\u1EA3o v\u1EADt c\u1EE7a Lancer khi s\u1EED d\u1EE5ng s\u1EBD chuy\u1EC3n
+    \u0111\u1ED5i \u0111\xF2n t\u1EA5n c\xF4ng"
+  Price: 0
+  ItemType: 1
+  TreasureType: 5
+  Used: 0

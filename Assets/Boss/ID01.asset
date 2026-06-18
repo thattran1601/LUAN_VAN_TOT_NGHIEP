@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e74291c53c91854c9f8cb17afe63db2, type: 3}
+  m_Name: ID01
+  m_EditorClassIdentifier: 
+  BossName: "Ma v\u01B0\u01A1ng"
+  hp: 3000
+  damage: 50
+  speed: "B\xECnh th\u01B0\u1EDDng"
+  icon: {fileID: -4551999497626061999, guid: 38e26291822c9b9479504c21a5a98126, type: 3}
+  skill: "Ma tr\u1EA3o g\xE2y s\xE1t th\u01B0\u01A1ng l\u1EDBn l\xEAn to\xE0n b\u1EA3n
+    \u0111\u1ED3"
+  Counter: "Kh\xF4ng c\xF3"
+  Giamthuong: 0

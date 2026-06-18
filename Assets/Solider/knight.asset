@@ -20,3 +20,68 @@ MonoBehaviour:
   Cooldown: 6
   Hp: 240
   dame: 32
+  Level: 1
+  damageReduction: 20
+  LevelMax: 20
+  HpPerLevel: 20
+  DamePerLevel: 2
+  DamageReductionPerLevel: 0
+  baseGoldCost: 100
+  goldIncreasePerLevel: 100
+  levels:
+  - start: 1
+    end: 6
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 5
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 4
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 7
+    CostLv: 100
+  - start: 6
+    end: 9
+    materialCosts:
+    - item: {fileID: 11400000, guid: e6b15e2242e09c04a82e164b3c798078, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 7
+    - item: {fileID: 11400000, guid: b502d97a06b1512489e12342d0985099, type: 2}
+      amount: 7
+    CostLv: 150
+  - start: 10
+    end: 16
+    materialCosts:
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 10
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 7
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 7
+    CostLv: 200
+  - start: 16
+    end: 19
+    materialCosts:
+    - item: {fileID: 11400000, guid: 75c60a78c3fb40b4aa895246b03e8710, type: 2}
+      amount: 15
+    - item: {fileID: 11400000, guid: fb65eb5b2f70ec847a0454d61cef51c0, type: 2}
+      amount: 14
+    - item: {fileID: 11400000, guid: e24086e81b6351d429e5ebd81d971700, type: 2}
+      amount: 14
+    CostLv: 250
+  - start: 9
+    end: 10
+    materialCosts:
+    - item: {fileID: 11400000, guid: a4ad1c62868015a48a7535e023872e53, type: 2}
+      amount: 1
+    CostLv: 1000
+  - start: 19
+    end: 20
+    materialCosts:
+    - item: {fileID: 11400000, guid: a4ad1c62868015a48a7535e023872e53, type: 2}
+      amount: 10
+    CostLv: 5000
+  iconSkill: {fileID: 27463979164270321, guid: a3cf729cd89ef5147b310273eb6704f7, type: 3}
+  ThongTinSkill: "Chuy\u1EC3n \u0111\u1ED5i \u0111\xF2n \u0111\xE1nh th\u01B0\u1EDDng
+    th\xE0nh \u0111\xF2n \u0111\xE1nh g\xE2y s\xE1t th\u01B0\u1EDFng k\xE8m t\u1EC9
+    l\u1EC7 thi\xEAu d\u1ED1t \u0111\u1ED1i ph\u01B0\u01A1ng."

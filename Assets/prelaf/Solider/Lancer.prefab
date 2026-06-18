@@ -150,6 +150,116 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &2605700360044990382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5776302848559429449}
+  - component: {fileID: 4991246890070058019}
+  - component: {fileID: 1167934601619044197}
+  m_Layer: 0
+  m_Name: CuongBao (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5776302848559429449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605700360044990382}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.08, y: 2.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5920001048806325047}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &4991246890070058019
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605700360044990382}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -891489341
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8114546989993831635, guid: a3ee991fc414ac743b9df42a2dc90e0f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.82, y: 0.82}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &1167934601619044197
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2605700360044990382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80fd145f8c4bd3540b461b29a7930dd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3082468487058451862
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3372218350662485334}
+  - component: {fileID: 705019519519939215}
   m_Layer: 8
   m_Name: checkattack
   m_TagString: Untagged
@@ -175,12 +286,48 @@ Transform:
   m_GameObject: {fileID: 3082468487058451862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.24, y: 0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5920001048806325047}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &705019519519939215
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3082468487058451862}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.33511364, y: 0}
+  m_Radius: 1.139762
 --- !u!1 &3681807830333111198
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.11, y: 2.11}
+  m_AnchoredPosition: {x: 0.11, y: 1.99}
   m_SizeDelta: {x: 105.1662, y: 17.1243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4380820111379467746
@@ -300,6 +447,8 @@ GameObject:
   - component: {fileID: 8683727529926589930}
   - component: {fileID: 6215819471972909996}
   - component: {fileID: 1219230726847549112}
+  - component: {fileID: -5988339508510011419}
+  - component: {fileID: 317989078634986880}
   m_Layer: 7
   m_Name: Lancer
   m_TagString: Untagged
@@ -320,6 +469,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5776302848559429449}
   - {fileID: 3372218350662485334}
   - {fileID: 4103362146868809820}
   m_Father: {fileID: 0}
@@ -414,9 +564,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 220
+  currentHp: 0
   hpCanvas: {fileID: 3681807830333111198}
   Hpfill: {fileID: 5378341545517001296}
-  damageReduction: 1
+  damageReduction: 0.9
 --- !u!114 &1611016535723963078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +584,14 @@ MonoBehaviour:
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
   IsStun: 0
+  isTour: 0
+  IsSkill: 0
+  runtimeData:
+    UnitId: 0
+    Level: 0
+    iSlock: 0
+    EquippedTreasureId: 0
+  unitdata: {fileID: 0}
 --- !u!114 &8683727529926589930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,13 +606,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dame: 40
   posionAttack: {fileID: 3372218350662485334}
-  attackrange: 1
+  attackrange: 2
   enemy:
     serializedVersion: 2
     m_Bits: 64
   Boss:
     serializedVersion: 2
     m_Bits: 8192
+  Conglayer:
+    serializedVersion: 2
+    m_Bits: 65536
+  BuffAttack: {fileID: 2605700360044990382}
+  damemove: 0
 --- !u!70 &6215819471972909996
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -518,3 +682,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5988339508510011419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547498623414822436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07236706f6de0e144964d2f35880d5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitData: {fileID: 11400000, guid: 3f779a0bc96b08f41a66ccd1583af166, type: 2}
+  Level: 0
+  dame: 0
+  Hp: 0
+  damageReduction: 0
+--- !u!114 &317989078634986880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6547498623414822436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3861874a4004deb4cbd5d9c1086c551a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dame: 0
+  posionAttack: {fileID: 3372218350662485334}
+  attackrange: 2
+  enemy:
+    serializedVersion: 2
+    m_Bits: 64
+  Boss:
+    serializedVersion: 2
+    m_Bits: 8192
+  Conglayer:
+    serializedVersion: 2
+    m_Bits: 65536

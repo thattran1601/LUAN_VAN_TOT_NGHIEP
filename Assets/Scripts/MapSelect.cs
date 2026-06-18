@@ -1,48 +1,137 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MapSelect : MonoBehaviour
 {
+    public static MapSelect instance;
+
     public GameObject Wated;
     public GameObject Panel;
-    void Start()
+    public GameObject MapItem;
+    public Transform content;
+    public MapData[] mapdata;
+    public UnitData[] unitDatas;
+    private void Awake()
     {
-        Panel.SetActive(false);
-        Wated.SetActive(false);
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
-    }
-    public void mapselect(int mapselect)
-    {
-        int MapInt = SaveManager.instance.GetUnLockMap();
-        if (mapselect <= MapInt)
+        if (Panel != null)
+            Panel.SetActive(false);
+
+        if (Wated != null)
+            Wated.SetActive(false);
+
+        if (content == null)
         {
-            if(GameData.UnitData.Count==0)
+            Debug.LogError("Chưa kéo Content vào");
+            return;
+        }
+
+        if (MapItem == null)
+        {
+            Debug.LogError("Chưa kéo MapItemPrefab vào");
+            return;
+        }
+
+        if (mapdata == null || mapdata.Length == 0)
+        {
+            Debug.LogError("Chưa kéo MapData vào mảng mapdata");
+            return;
+        }
+
+        CreateMapItems();
+    }
+
+    private void CreateMapItems()
+    {
+        foreach (MapData map in mapdata)
+        {
+            if (map == null)
+                continue;
+
+            GameObject obj = Instantiate(MapItem, content);
+            MapItemUI itemUI = obj.GetComponent<MapItemUI>();
+
+            if (itemUI != null)
             {
-                Panel.SetActive(true);
+                itemUI.setup(map);
+            }
+            else
+            {
+                Debug.LogError("MapItem prefab chưa có script MapItemUI");
+            }
+        }
+    }
+
+    public void mapselect(int mapId)
+    {
+        PlayClickSound();
+
+        if (SaveGameManager.instance == null)
+        {
+            Debug.LogError("SaveGameManager chưa tồn tại trong scene đầu tiên");
+            return;
+        }
+
+        int mapUnlocked = SaveGameManager.instance.GetUnlockMap();
+        TeamLoader.LoadTeamToGameData(unitDatas);
+
+        if (mapId <= mapUnlocked)
+        {
+            if (GameData.UnitData == null || GameData.UnitData.Count == 0)
+            {
+                if (Panel != null)
+                    Panel.SetActive(true);
+
                 return;
-            }    
-            GameData.MapInt = mapselect;
-            SceneTransition.Instance.LoadSceneManager("GamePlay");
-        } 
+            }
+
+            GameData.MapInt = mapId;
+            LoadSceneSafe("GamePlay");
+        }
         else
         {
-           Wated.SetActive(true);
-        }    
-            
-      
-    }   
+            if (Wated != null)
+                Wated.SetActive(true);
+        }
+    }
+
     public void OK()
     {
-        Wated.SetActive(false);
-    }    
+        PlayClickSound();
+
+        if (Wated != null)
+            Wated.SetActive(false);
+    }
+
     public void ButtonOK()
     {
-        Panel.SetActive(false);
-    }    
+        PlayClickSound();
+
+        if (Panel != null)
+            Panel.SetActive(false);
+    }
+
+    private void PlayClickSound()
+    {
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(AudioManager.instance.ButtonClick);
+        }
+    }
+
+    private void LoadSceneSafe(string sceneName)
+    {
+        if (SceneTransition.Instance != null)
+        {
+            SceneTransition.Instance.LoadSceneManager(sceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+    }
 }

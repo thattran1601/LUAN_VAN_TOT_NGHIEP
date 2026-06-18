@@ -66,8 +66,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2878275, y: 0.3529955}
-  m_Radius: 1.1408229
+  m_Offset: {x: -0.1717627, y: 0.3529955}
+  m_Radius: 0.6812327
 --- !u!1 &3459803693779581531
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +321,116 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6703650872848741669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5838605193447343978}
+  - component: {fileID: 2814047465838187355}
+  - component: {fileID: 6385169553915307215}
+  m_Layer: 0
+  m_Name: CuongBao (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5838605193447343978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703650872848741669}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.26, y: 2.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3022586156691897810}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2814047465838187355
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703650872848741669}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -891489341
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8114546989993831635, guid: a3ee991fc414ac743b9df42a2dc90e0f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.82, y: 0.82}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &6385169553915307215
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6703650872848741669}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80fd145f8c4bd3540b461b29a7930dd9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6889615552055653202
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +447,7 @@ GameObject:
   - component: {fileID: 7882084263377738050}
   - component: {fileID: 5669850833123951740}
   - component: {fileID: 3947285060634681844}
+  - component: {fileID: -3665363142756701733}
   m_Layer: 7
   m_Name: Knight
   m_TagString: Untagged
@@ -359,6 +470,7 @@ Transform:
   m_Children:
   - {fileID: 794322901676523987}
   - {fileID: 2105397303937136294}
+  - {fileID: 5838605193447343978}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7323241111570718008
@@ -459,6 +571,11 @@ MonoBehaviour:
   Boss:
     serializedVersion: 2
     m_Bits: 8192
+  Conglayer:
+    serializedVersion: 2
+    m_Bits: 65536
+  BuffAttack: {fileID: 6703650872848741669}
+  damemove: 0
 --- !u!114 &4765446453066135205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,9 +589,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 240
+  currentHp: 0
   hpCanvas: {fileID: 3459803693779581531}
   Hpfill: {fileID: 6513354104981248225}
-  damageReduction: 1
+  damageReduction: 0.8
 --- !u!114 &7882084263377738050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491,6 +609,7 @@ MonoBehaviour:
   IsEnemy: 0
   GioiHanChuyeDong: {fileID: 0}
   IsStun: 0
+  isTour: 0
 --- !u!50 &5669850833123951740
 Rigidbody2D:
   serializedVersion: 5
@@ -555,3 +674,20 @@ CapsuleCollider2D:
   m_Offset: {x: -0.056223124, y: 0.5428127}
   m_Size: {x: 0.9907895, y: 1.6214054}
   m_Direction: 0
+--- !u!114 &-3665363142756701733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889615552055653202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07236706f6de0e144964d2f35880d5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitData: {fileID: 11400000, guid: c6d7c244abd6e844d8e9da8ba4d8a166, type: 2}
+  Level: 0
+  dame: 0
+  Hp: 0
+  damageReduction: 0

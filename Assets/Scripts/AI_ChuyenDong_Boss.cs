@@ -19,12 +19,13 @@ public class AI_ChuyenDong_Boss : MonoBehaviour
 
     void Update()
     {
-
-        if (GameManager.instance.IsOver)
+        if (GameManager.instance.IsOver || GameManager.instance.IsWin || UISetting.intance.isSetting == true)
+        {
+            animator.speed = 0f;
             return;
+        }
+        animator.speed = 1f;
         if (Heals_boss.instance.Isdieboss)
-            return;
-        if (UISetting.intance.isSetting == true)
             return;
         ChuyenDong();
     }

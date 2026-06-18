@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using Unity.Jobs;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class AI_Chuyen_Dong : MonoBehaviour
 {
@@ -11,7 +13,10 @@ public class AI_Chuyen_Dong : MonoBehaviour
     public Transform GioiHanChuyeDong;
     public bool IsStun;
     float speedNomal;
-
+    public bool isTour;
+    public bool IsSkill;
+    public UnitRuntimeData runtimeData;
+    public UnitData unitdata;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -26,12 +31,13 @@ public class AI_Chuyen_Dong : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.IsOver)
+        if (GameManager.instance.IsOver || GameManager.instance.IsWin|| UISetting.intance.isSetting == true)
+        {
+            animator.speed = 0f;
             return;
-        if (GameManager.instance.IsWin)
-            return;
-        if (UISetting.intance.isSetting == true)
-            return;
+        }
+        
+        animator.speed = 1f;
         if (transform.position.x>=GioiHanChuyeDong.position.x)
         {
             speed = 0f;
@@ -40,12 +46,38 @@ public class AI_Chuyen_Dong : MonoBehaviour
         }    
         ChuyenDong();
     }
+    public void setup(UnitData unit)
+    {
+        unitdata = unit;
+        CheckTreasure();
+    }    
     void ChuyenDong()
     {
         if (IsStun == true)
             return;
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
+    public void CheckTreasure()
+    {
+        runtimeData = UnitOwnedManager.Instance.GetRuntime(unitdata.Id);
+        ItemData relic = InventoryManager.Instance.GetByIdItem(runtimeData.EquippedTreasureId);
+       if(runtimeData==null)
+        {
+            Debug.Log(runtimeData.UnitId);
+            return;
+        }    
+        if(relic==null)
+        {
+            Debug.Log(relic);
+            return;
+        }    
+            IsSkill=false;
+       if(relic.TreasureType==unitdata.UnitId)
+        {
+            IsSkill = true;
+        }    
+       
+    }   
     private void OnTriggerEnter2D(Collider2D collision)
     {
       
@@ -55,8 +87,17 @@ public class AI_Chuyen_Dong : MonoBehaviour
 
             speed = 0f;
                 IsEnemy++;
-                //animator.SetBool("idel", false);
+            if(IsSkill==true)
+            {
+                animator.SetBool("skill", true);
+                animator.SetBool("attack", false);
+            }
+            else
+            {//animator.SetBool("idel", false);
                 animator.SetBool("attack", true);
+                animator.SetBool("skill", false);
+            }
+                
               
               
             
@@ -68,6 +109,12 @@ public class AI_Chuyen_Dong : MonoBehaviour
             animator.SetBool("attack", true);
          
         }
+        if(collision.gameObject.layer==LayerMask.NameToLayer("Cong"))
+        {
+            isTour = true;
+            speed = 0f;
+            animator.SetBool("attack", true);
+        }    
 
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -76,17 +123,28 @@ public class AI_Chuyen_Dong : MonoBehaviour
         if (collision.gameObject.layer ==LayerMask.NameToLayer("Enemy_Body"))
         {
             IsEnemy--;
-            if(IsEnemy==0)
+            if(IsEnemy==0 && isTour==false)
             {
-                speed = 2f;
-                animator.SetBool("attack", false);
+                if(IsSkill==true)
+                {
+
+                    animator.SetBool("skill",false);
+                    animator.SetBool("attack",false);
+
+                }
+                else
+                {
+                   
+                    animator.SetBool("attack", false);
+                }
+                speed = speedNomal;
             }    
             
            ;
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Boss_Body"))
         {
-            speed = 2f;
+            speed = speedNomal;
             animator.SetBool("attack", false);
         }
     }
@@ -111,7 +169,10 @@ public class AI_Chuyen_Dong : MonoBehaviour
         }
         else
         {
-            animator.SetBool("attack", true);
+            if (IsSkill)
+                animator.SetBool("skill", true);
+            else
+                animator.SetBool("attack", true);
         }
     }
 }

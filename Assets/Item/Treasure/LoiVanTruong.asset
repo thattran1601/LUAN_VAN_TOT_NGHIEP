@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17e66b97c580d5459c7e290ba85dd5c, type: 3}
+  m_Name: LoiVanTruong
+  m_EditorClassIdentifier: 
+  Id: 18
+  Name: "L\xF4i V\xE2n Tr\u01B0\u1EE3ng"
+  Item: {fileID: -5046033834713742633, guid: 19a0538c0d4623745a0f574d32352bb5, type: 3}
+  Description: "B\u1EA3o v\u1EADt c\u1EE7a Megre khi s\u1EED d\u1EE5ng s\u1EBD chuy\u1EC3n
+    \u0111\u1ED5i \u0111\xF2n t\u1EA5n c\xF4ng"
+  Price: 0
+  ItemType: 1
+  TreasureType: 3
+  Used: 0

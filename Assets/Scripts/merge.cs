@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class merge : MonoBehaviour
 {
-    public int dame;
+    public static merge Instance;
+    public int Dame;
     public GameObject prelafWizard;
     public int enemy;
+    public int Count;
+    private void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         
@@ -13,25 +19,33 @@ public class merge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+          
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void setup(int count,int dame)
     {
+        Dame = dame;
+        Count = count;
+    }    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {           
+
         if(collision.gameObject.layer==LayerMask.NameToLayer("Enemy_Body"))
         {
-            Instantiate(prelafWizard,transform.position,Quaternion.identity);
             enemy++;
             Heals heals = collision.gameObject.GetComponent<Heals>();
-            if(enemy>=3)
+            
+            if(enemy==Count)
             {
-                heals.TakeDamage(dame);
+
+                heals.TakeDamage(Dame);
+               
                 Destroy(gameObject);
             }
             else
             {
                 if (heals != null)
                 {
-                    heals.TakeDamage(dame);
+                    heals.TakeDamage(Dame);
                     Destroy(gameObject,10f);
                 }
             }
@@ -42,9 +56,18 @@ public class merge : MonoBehaviour
             Heals_boss boss=collision.gameObject.GetComponent<Heals_boss>();
             if (boss != null)
             {
-                boss.takedame(dame);
+                boss.takedame(Dame);
                 Destroy(gameObject);
             }
+        } 
+        if(collision.gameObject.layer==LayerMask.NameToLayer("Cong"))
+        {
+            HeathCong heath=collision.gameObject.GetComponent<HeathCong>(); 
+            if(heath!=null)
+            {
+                heath.TakeDame(Dame);
+                Destroy(gameObject);
+            }    
         }    
     }
 }

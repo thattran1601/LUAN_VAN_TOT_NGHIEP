@@ -30,7 +30,7 @@ public class WaveManager : MonoBehaviour
         WaveMax = currentmap.wave.Length;
         
         BossManger.instance.PrelafBoss = currentmap.Boss;
-        Instantiate(currentmap.Background, Vector3.zero, Quaternion.identity);
+        Instantiate(currentmap.Map, Vector3.zero, Quaternion.identity);
         startWave();
     }
 
@@ -110,6 +110,8 @@ public class WaveManager : MonoBehaviour
 
         yield return new WaitForSeconds(Time);
         WaveCurrent++;
+        GoldManager.instance.CurrentGold += 20;
+        GoldManager.instance.UpdateGoldUI();
         StartCoroutine(wavePopup.Intance.wavepopup(WaveCurrent));
         isChangingWave = false;
         startWave();
